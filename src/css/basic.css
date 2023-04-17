@@ -1,0 +1,34 @@
+.basic-style {
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #cacaca;
+    background-color: #08020d;
+}
+
+.desktop-title-h1 {
+    font-size: 60px;
+    line-height: 90px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.desktop-title-h2 {
+    font-size: 38px;
+    line-height: 57px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mobile-title-h1 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mobile-title-h2 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
