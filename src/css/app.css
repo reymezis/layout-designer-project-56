@@ -1,0 +1,251 @@
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("../fonts/Roboto.woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  src: url("../fonts/Robotobold.woff");
+}
+
+body {
+  margin: auto;
+  width: 1440px;
+  font-family: Roboto, sans-serif;
+  color: #FFF;
+  background: #08020D;
+}
+
+.first-section {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+  font-size: 60px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+  font-size: 38px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu-item {
+  text-decoration: none;
+  padding-right: 24px;
+  font-family: Roboto, sans-serif;
+  color: #FFF;
+  font-size: 11px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.logo-img {
+  width: 24px;
+  height: 24px;
+}
+
+.search {
+  width: 248px;
+  height: 25px;
+  border-radius: 50px;
+  background: #3C3B3D;
+}
+
+.search-field {
+  padding: 5px 0 5px 10px;
+  background: inherit;
+  border: none;
+  font-family: Arial, sans-serif;
+  font-size: 13.3px;
+  line-height: 15.3px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header {
+  position: absolute;
+  top: 25px;
+  padding-left: 119px;
+  padding-right: 121px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 188px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-item {
+  padding-left: 16px;
+  padding-top: 3px;
+}
+
+.menu {
+  width: 764px;
+}
+
+#page-description {
+  padding: 200px 0;
+  text-align: center;
+}
+
+.promotion {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: initial;
+}
+
+.registration {
+  max-width: 570px;
+  margin: auto;
+}
+
+.fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.reg-input {
+  min-width: 270px;
+  min-height: 50px;
+  margin-bottom: 1.5rem;
+  border: 2px solid #FFF;
+  border-radius: 3px;
+  background: inherit;
+  padding: 0;
+}
+
+.btn {
+  padding: 20px 30px;
+  color: #FFF;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  background: #34C176;
+  font-family: Arial, sans-serif;
+  font-size: 13.3px;
+  line-height: 15.3px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+fieldset input::placeholder {
+  text-align: left;
+  padding-left: 20px;
+  font-family: Roboto, sans-serif;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 16.41;
+  font-weight: 700;
+  text-transform: initial;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  border: none;
+}
+
+@media (max-width: 414px) {
+  body {
+    max-width: 414px;
+  }
+
+  .first-section {
+    padding: 0 20px;
+  }
+
+  .header {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .logo {
+    padding-bottom: 17px;
+  }
+
+  .menu-item {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+  }
+
+  .menu {
+    padding-bottom: 18px;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .search {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 414px) {
+  h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  #page-description {
+    padding: 250px 0;
+  }
+
+  .promotion {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: initial;
+  }
+
+  .registration {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .reg-input {
+    width: 100%;
+  }
+}

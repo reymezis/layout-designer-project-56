@@ -1,0 +1,72 @@
+
+body {
+    @include m-auto;
+    @include width(1440px);
+    @include roboto-font-style;
+    background: $dark;
+}
+
+.first-section {
+    background-image: url("../images/banner.png");
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    @include m-0;
+    @include font-style(60px, 700, uppercase);
+}
+
+h2 {
+    @include m-0;
+    @include font-style(38px, 700, uppercase);
+}
+
+.menu-item {
+    text-decoration: none;
+    padding-right: 24px;
+
+    @include roboto-font-style;
+    @include font-style(11px, 400, uppercase);
+}
+
+.logo-img {
+    @include width-height(24px, 24px);
+}
+
+.search {
+    @include width-height(248px, 25px);
+    @include border-r-and-background(50px, $grey);
+}
+
+.search-field {
+    padding: 5px 0 5px 10px;
+    background: inherit;
+
+    @include border-n;
+    @include arial-font-style;
+    @include font-style(13.3px, 400, uppercase, 15.3px);
+}
+
+.header {
+    position: absolute;
+    top: 25px;
+    padding-left: 119px;
+    padding-right: 121px;
+
+    @include flex-center;
+}
+
+.logo {
+    @include width-height(188px, 24px);
+    @include flex-center;
+}
+
+.logo-item {
+    padding-left: 16px;
+    padding-top: 3px;
+}
+
+.menu {
+    @include width(764px);
+}

@@ -1,0 +1,35 @@
+@media (max-width: 414px) {
+    body {
+        max-width: 414px;
+    }
+
+    .first-section {
+        padding: 0 20px;
+    }
+
+    .header {
+        @include flex-column;
+        align-items: flex-start;
+
+        @include p-0;
+    }
+
+    .logo {
+        @include pb(17px);
+    }
+
+    .menu-item {
+        @include font-style(11px, 700, uppercase, 13px);
+        @include pb(3px);
+    }
+
+    .menu {
+        @include pb(18px);
+        @include width(100%);
+        @include flex-column;
+    }
+
+    .search {
+        @include width(90vw);
+    }
+}

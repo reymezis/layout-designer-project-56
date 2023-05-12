@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
     <title>Портал «Music Box» reymezis</title>
 </head>
 <body>
-    
+    <div class="first-section">
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Логотип" class="logo-img">
+                <a href="#" class="menu-item logo-item">Music Box</a>
+            </div>
+            <div class="menu">
+                <a href="#" class="menu-item">Главная</a>
+                <a href="#" class="menu-item">Каталог</a>
+                <a href="#" class="menu-item">Исполнители</a>
+                <a href="#" class="menu-item">Контакты</a>
+            </div>
+            <div class="search">
+                <form>
+                    <label for="search" class="sr-only"></label>
+                    <input id="search" class="search-field" type="search" placeholder="Поиск...">
+                </form>
+            </div>
+    </header>
+    <div id="page-description">
+        <h1>Онлайн музыка где угодно</h1>
+        <h2>без ограничений</h2>
+        <p class="promotion">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <form class="registration">
+            <fieldset class="fieldset">
+                <label for="registration-name" class="sr-only"></label>
+                <input id="registration-name" class="reg-input" type="text" placeholder="Имя">
+                <label for="registration-email" class="sr-only"></label>
+                <input id="registration-email" class="reg-input" type="email" placeholder="Email">
+            </fieldset>
+            <button class="btn" type="submit">Получить доступ</button>
+        </form>
+    </div>
+    </div>
+
 </body>
 </html>

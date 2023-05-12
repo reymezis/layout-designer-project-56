@@ -1,0 +1,84 @@
+@mixin m-0 {
+    margin: 0;
+}
+
+@mixin m-auto {
+    margin: auto;
+}
+
+@mixin p-0 {
+    padding: 0;
+}
+
+@mixin pb($val) {
+    padding-bottom: $val;
+}
+
+@mixin width($val) {
+    width: $val;
+}
+
+@mixin width-height($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+
+    @content;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-flow: column wrap;
+
+    @content;
+}
+
+@mixin border-n {
+    border: none;
+}
+
+@mixin border-r($val) {
+    border-radius: $val;
+}
+
+@mixin border-r-and-background($val, $color) {
+    border-radius: $val;
+    background: $color;
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: Roboto;
+    src: url("../fonts/Roboto.woff");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: Roboto;
+    src: url("../fonts/Robotobold.woff");
+}
+
+@mixin roboto-font-style {
+    font-family: Roboto, sans-serif;
+    color: $white;
+
+    @content;
+}
+
+@mixin arial-font-style {
+    font-family: Arial, sans-serif;
+}
+
+@mixin font-style($fs, $fw, $tt, $lh:1.5) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+    text-transform: $tt;
+}
+
+
+
