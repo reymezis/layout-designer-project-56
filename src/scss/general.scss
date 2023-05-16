@@ -2,16 +2,20 @@
     margin: 0;
 }
 
-@mixin m-auto {
-    margin: auto;
+@mixin m-0-auto {
+    margin: 0 auto;
 }
 
 @mixin p-0 {
     padding: 0;
 }
 
-@mixin pb($val) {
-    padding-bottom: $val;
+@mixin mb($val) {
+    margin-bottom: $val;
+}
+
+@mixin pr($val) {
+    padding-right: $val;
 }
 
 @mixin width($val) {
@@ -33,6 +37,7 @@
 @mixin flex-column {
     display: flex;
     flex-flow: column wrap;
+    align-items: flex-start;
 
     @content;
 }
@@ -79,6 +84,8 @@
     font-weight: $fw;
     text-transform: $tt;
 }
+
+
 
 
 

@@ -1,35 +1,35 @@
 @media (max-width: 414px) {
-    body {
+    .first-section {
+        padding: 0 20px;
         max-width: 414px;
     }
 
-    .first-section {
-        padding: 0 20px;
-    }
-
     .header {
-        @include flex-column;
-        align-items: flex-start;
-
-        @include p-0;
+        padding: 0 20px;
+        display: block;
+        left: 0;
+        right: 0;
     }
 
     .logo {
-        @include pb(17px);
+        @include mb(17px);
+    }
+
+    .mb-3px {
+        @include mb(3px);
     }
 
     .menu-item {
-        @include font-style(11px, 700, uppercase, 13px);
-        @include pb(3px);
+        @include p-0;
+        @include font-style(11px, 700, uppercase, 12.89px);
     }
 
     .menu {
-        @include pb(18px);
-        @include width(100%);
+        @include mb(18px);
         @include flex-column;
     }
 
     .search {
-        @include width(90vw);
+        @include width(100%);
     }
 }

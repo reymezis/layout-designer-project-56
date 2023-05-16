@@ -1,0 +1,98 @@
+#page-pricing {
+  @include m-0-auto;
+  padding-top: 100px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.pb-45px {
+  padding-bottom: 45px;
+}
+
+.mr-50px {
+  margin-right: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing-item {
+  flex: 1 1 26.5%;
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 40px;
+}
+
+h3 {
+  @include m-0;
+  padding-top: 24px;
+  padding-bottom: 200px;
+  @include roboto-font-style;
+  @include font-style(24px, 400, uppercase);
+}
+
+.pricing-value {
+  @include m-0;
+  padding-bottom: 40px;
+  @include roboto-font-style;
+  @include font-style(64px, 400, uppercase, 1em);
+  
+}
+
+.rub {
+  padding-left: 16px;
+  @include roboto-font-style;
+  @include font-style(32px, 400, uppercase);
+  vertical-align: top;
+}
+
+.d-flex-center {
+  @include flex-center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 66px;
+  border: 1px solid $white;
+  border-radius: 5px;
+}
+
+.pricing-btn {
+  text-decoration: none;
+  @include roboto-font-style;
+  @include font-style(16px, 400, uppercase);
+}
+
+.pricing-footer {
+  @include m-0;
+  padding: 64px 0;
+  @include roboto-font-style;
+  @include font-style(12.8px, 400, initial);
+  text-align: center;
+}
+
+.footer-text-price {
+  @include m-0;
+  @include roboto-font-style;
+  @include font-style(16px, 400, initial);
+}
+
+.bg-free {
+  background-image: url("../images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-standart {
+  background-image: url("../images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-premium {
+  background-image: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}

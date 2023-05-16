@@ -1,20 +1,18 @@
 @media (max-width: 414px) {
     h1 {
-        @include m-0;
         @include font-style(30px, 700, uppercase);
     }
     
     h2 {
-        @include m-0;
         @include font-style(18px, 700, uppercase);
     }
 
     #page-description {
-        padding: 250px 0;
+        padding-top: 250px;
     }
 
     .promotion {
-        margin-top: 16px;
+        margin: 16px 0;
     
         @include font-style(16px, 400, initial);
     }
@@ -24,6 +22,7 @@
     }
 
     .reg-input {
+        box-sizing: border-box;
         @include width(100%);
     }
 }

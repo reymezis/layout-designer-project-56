@@ -3,55 +3,60 @@
     text-align: center;
 }
 
+h1 {
+    @include m-0;
+    @include font-style(60px, 700, uppercase);
+}
+
+h2 {
+    @include m-0;
+    @include font-style(38px, 700, uppercase);
+}
+
 .promotion {
     margin-top: 30px;
-
     @include font-style(16px, 400, initial);
 }
 
 .registration {
+    @include m-0-auto;
     max-width: 570px;
-
-    @include m-auto;
 }
 
 .fieldset {
+    @include m-0;
+    @include p-0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    @include m-0;
-    @include p-0;
     @include border-n;
 }
 
 .reg-input {
+    @include p-0;
+    margin-bottom: 1.5rem;
     min-width: 270px;
     min-height: 50px;
-    margin-bottom: 1.5rem;
     border: 2px solid $white;
-
     @include border-r-and-background(3px, inherit);
-    @include p-0;
 }
 
 .btn {
     padding: 20px 30px;
-    color: $white;
-
-    @include border-n;
     @include width(100%);
+    min-height: 57px;
+    @include border-n;
     @include border-r-and-background(5px, $green);
     @include arial-font-style;
     @include font-style(13.3px, 400, uppercase, 15.3px);
+    color: $white;
 }
 
 fieldset input::placeholder {
-    text-align: left;
     padding-left: 20px;
-
     @include roboto-font-style;
     @include font-style(14px, 700, initial, 16.41);
+    text-align: left;
 }
 
 .sr-only {
@@ -60,6 +65,5 @@ fieldset input::placeholder {
     position: absolute;
     overflow: hidden;
     white-space: nowrap;
-
     @include border-n;
 }

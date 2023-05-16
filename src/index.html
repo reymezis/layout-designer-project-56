@@ -8,40 +8,69 @@
     <title>Портал «Music Box» reymezis</title>
 </head>
 <body>
-    <div class="first-section">
-        <header class="header">
-            <div class="logo">
-                <img src="images/logo.svg" alt="Логотип" class="logo-img">
-                <a href="#" class="menu-item logo-item">Music Box</a>
-            </div>
-            <div class="menu">
-                <a href="#" class="menu-item">Главная</a>
-                <a href="#" class="menu-item">Каталог</a>
-                <a href="#" class="menu-item">Исполнители</a>
-                <a href="#" class="menu-item">Контакты</a>
-            </div>
-            <div class="search">
-                <form>
+    <div class="bg">
+        <div class="first-section">
+            <header class="header">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="Логотип" class="logo-img">
+                    <a href="#" class="menu-item pt-3px">Music Box</a>
+                </div>
+                <div class="menu pt-3px">
+                    <a href="#" class="menu-item pr-24px mb-3px">Главная</a>
+                    <a href="#" class="menu-item pr-24px mb-3px">Каталог</a>
+                    <a href="#" class="menu-item pr-24px mb-3px">Исполнители</a>
+                    <a href="#" class="menu-item">Контакты</a>
+                </div>
+                <form class="search">
                     <label for="search" class="sr-only"></label>
                     <input id="search" class="search-field" type="search" placeholder="Поиск...">
                 </form>
+            </header>
+            <div id="page-description">
+                <h1>Онлайн музыка где угодно</h1>
+                <h2>без ограничений</h2>
+                <p class="promotion">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+                <form class="registration">
+                    <fieldset class="fieldset">
+                        <label for="registration-name" class="sr-only"></label>
+                        <input id="registration-name" class="reg-input" type="text" placeholder="Имя">
+                        <label for="registration-email" class="sr-only"></label>
+                        <input id="registration-email" class="reg-input" type="email" placeholder="Email">
+                    </fieldset>
+                    <button class="btn" type="submit">Получить доступ</button>
+                </form>
             </div>
-    </header>
-    <div id="page-description">
-        <h1>Онлайн музыка где угодно</h1>
-        <h2>без ограничений</h2>
-        <p class="promotion">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-        <form class="registration">
-            <fieldset class="fieldset">
-                <label for="registration-name" class="sr-only"></label>
-                <input id="registration-name" class="reg-input" type="text" placeholder="Имя">
-                <label for="registration-email" class="sr-only"></label>
-                <input id="registration-email" class="reg-input" type="email" placeholder="Email">
-            </fieldset>
-            <button class="btn" type="submit">Получить доступ</button>
-        </form>
+        </div>
     </div>
-    </div>
-
+    <section id="page-pricing">
+        <h2 class="pb-45px">Формы подписки</h2>
+        <div class="cards">
+            <div class="pricing-item bg-free mr-50px">
+                <h3>Бесплатная</h3>
+                <p class="pricing-value">0<span class="rub">руб.</span></p>
+                <div class="d-flex-center">
+                    <a href="#" class="pricing-btn">Оформить</a>
+                </div>
+                <p class="pricing-footer">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+            </div>
+            <div class="pricing-item bg-standart mr-50px">
+                <h3>Стандартная</h3>
+                <p class="pricing-value">250<span class="rub">руб.</span></p>
+                <div class="d-flex-center">
+                    <a href="#" class="pricing-btn">Оформить</a>
+                </div>
+                <p class="pricing-footer">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+            </div>
+            <div class="pricing-item bg-premium">
+                <h3>Премиум</h3>
+                <p class="pricing-value">500<span class="rub">руб.</span></p>
+                <div class="d-flex-center">
+                    <a href="#" class="pricing-btn">Оформить</a>
+                </div>
+                <p class="pricing-footer">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+            </div>
+        </div>
+        <p class="footer-text-price">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+    </section>
 </body>
 </html>
