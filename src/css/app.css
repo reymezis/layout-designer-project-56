@@ -526,5 +526,67 @@ h3 {
     gap: 50px;
   }
 }
+.mobile {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 100px 0;
+}
+
+.about-app {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.promo-app {
+  font-family: Roboto, sans-serif;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: initial;
+  color: #CACACA;
+}
+
+.download-btn {
+  font-family: Roboto, sans-serif;
+  color: #FFF;
+  font-size: 12.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: initial;
+  color: #FFF;
+  text-decoration: none;
+  padding: 17px 40px;
+  border: none;
+  border-radius: 32px;
+  background: #95390C;
+}
+
+.pb-16px {
+  padding-bottom: 16px;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+@media (max-width: 414px) {
+  .mobile {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 414px;
+  }
+  .about-app {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

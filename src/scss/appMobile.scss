@@ -1,0 +1,17 @@
+@media (max-width: 414px) {
+  .mobile {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 414px;
+  }
+
+  .about-app {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    @include font-style(18px, 700, uppercase);
+  }
+}
