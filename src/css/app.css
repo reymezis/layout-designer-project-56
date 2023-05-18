@@ -263,6 +263,10 @@ fieldset input::placeholder {
   padding-bottom: 45px;
 }
 
+.pt-100px {
+  padding-top: 100px;
+}
+
 .mr-50px {
   margin-right: 50px;
 }
@@ -279,10 +283,16 @@ fieldset input::placeholder {
   margin-bottom: 40px;
 }
 
+.pt-24px {
+  padding-top: 24px;
+}
+
+.pb-200px {
+  padding-bottom: 200px;
+}
+
 h3 {
   margin: 0;
-  padding-top: 24px;
-  padding-bottom: 200px;
   font-family: Roboto, sans-serif;
   color: #FFF;
   font-size: 24px;
@@ -381,6 +391,139 @@ h3 {
   }
   .pricing-item {
     margin-right: 0;
+  }
+}
+#page-news {
+  margin: 0 auto;
+  padding-top: 100px;
+  max-width: 1200px;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.pb-48px {
+  padding-bottom: 48px;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+}
+
+.img-size {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.text-news-title {
+  font-family: Roboto, sans-serif;
+  color: #FFF;
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: initial;
+}
+
+.text-news-txt {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: initial;
+  color: #CACACA;
+}
+
+.txt-paddings-f {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+.txt-paddings-s {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.news-author {
+  display: flex;
+  align-items: center;
+  padding-bottom: 48px;
+}
+
+.text-news-caption {
+  font-family: Roboto, sans-serif;
+  color: #FFF;
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #CACACA;
+}
+
+.text-yellow {
+  color: #F89202;
+}
+
+.pr-16px {
+  padding-right: 16px;
+}
+
+.btn-style {
+  color: #CACACA;
+  text-decoration: none;
+  padding: 16px 30px;
+  box-sizing: border-box;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+}
+
+@media (max-width: 414px) {
+  #page-news {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 414px;
+  }
+  .news-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+  .text-news-title {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: initial;
+  }
+  .txt-paddings-f {
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  .txt-paddings-s {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .news-item {
+    display: flex;
+    gap: 50px;
   }
 }
 

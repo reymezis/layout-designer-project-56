@@ -1,0 +1,41 @@
+@media (max-width: 414px) {
+  #page-news {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 414px;
+  }
+
+  .news-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .order-1 {
+    order: 1;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+
+  .text-news-title {
+    @include font-style(16px, 400, initial);
+  }
+
+  .txt-paddings-f {
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  
+  .txt-paddings-s {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .news-item {
+    display: flex;
+    gap: 50px;
+  }
+}

@@ -9,6 +9,10 @@
   padding-bottom: 45px;
 }
 
+.pt-100px {
+  padding-top: 100px;
+}
+
 .mr-50px {
   margin-right: 50px;
 }
@@ -25,10 +29,16 @@
   margin-bottom: 40px;
 }
 
+.pt-24px {
+  padding-top: 24px;
+}
+
+.pb-200px {
+  padding-bottom: 200px;
+}
+
 h3 {
   @include m-0;
-  padding-top: 24px;
-  padding-bottom: 200px;
   @include roboto-font-style;
   @include font-style(24px, 400, uppercase);
 }
@@ -96,3 +106,4 @@ h3 {
   background-position: center;
   background-size: cover;
 }
+
