@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
     <title>Портал «Music Box» reymezis</title>
 </head>
 <body>
-    
+    <main>
+        <div class="bg-artist">
+            <section class="albums-cover">
+                <header class="header">
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="Логотип" class="logo-img">
+                        <a href="#" class="menu-item pt-3px">Music Box</a>
+                    </div>
+                    <div class="menu pt-3px">
+                        <a href="#" class="menu-item pr-24px mb-3px">Главная</a>
+                        <a href="#" class="menu-item pr-24px mb-3px">Каталог</a>
+                        <a href="#" class="menu-item pr-24px mb-3px">Исполнители</a>
+                        <a href="#" class="menu-item">Контакты</a>
+                    </div>
+                    <form class="search">
+                        <label for="search" class="sr-only"></label>
+                        <input id="search" class="search-field" type="search" placeholder="Поиск...">
+                    </form>
+                </header>
+                <div id="page-description">
+                    <h1 class="ta-left">Morten Harket</h1>
+                    <p class="ta-left pb-2rem">24 875 поклонников</p>
+                    <div class="actions">
+                        <button class="artist-btn btn-mix">
+                            <img class="icons" src="images/play-button.svg" alt="play music button">
+                            <span class="name-btn">Микс</span>
+                        </button>
+                        <button class="artist-btn btn-favourite">
+                            <img class="icons" src="images/heart.svg" alt="add album in favourite button">
+                            <span class="name-btn">В избранное</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </main>
 </body>
 </html>

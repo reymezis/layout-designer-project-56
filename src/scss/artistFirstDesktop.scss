@@ -1,0 +1,66 @@
+body {
+  @include p-0;
+  @include m-0-auto;
+  @include roboto-font-style;
+  
+  background: $dark;
+}
+
+.bg-artist {
+  background-image: url('../images/Morten\ Harket.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.pb-2rem {
+  padding-bottom: 2rem;
+}
+
+.albums-cover {
+  @include m-0-auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.artist-btn {
+  width: 200px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.btn-mix {
+  background: $violet;
+}
+
+.btn-favourite {
+  background: $brown;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+  padding-right: 16px;
+  vertical-align: middle;
+}
+
+.name-btn {
+  @include m-0;
+  @include roboto-font-style;
+  @include font-style(12.8px, 400, uppercase);
+  vertical-align: middle;
+}
+
+
