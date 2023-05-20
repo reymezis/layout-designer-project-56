@@ -3,11 +3,13 @@
   font-family: Roboto;
   src: url("../fonts/Roboto.woff");
 }
+
 @font-face {
   font-weight: 700;
   font-family: Roboto;
   src: url("../fonts/Robotobold.woff");
 }
+
 body {
   padding: 0;
   margin: 0 auto;
@@ -190,18 +192,22 @@ fieldset input::placeholder {
     padding: 0 20px;
     max-width: 414px;
   }
+
   .header {
     padding: 0 20px;
     display: block;
     left: 0;
     right: 0;
   }
+
   .logo {
     margin-bottom: 17px;
   }
+
   .mb-3px {
     margin-bottom: 3px;
   }
+
   .menu-item {
     padding: 0;
     font-size: 11px;
@@ -209,16 +215,19 @@ fieldset input::placeholder {
     font-weight: 700;
     text-transform: uppercase;
   }
+
   .menu {
     margin-bottom: 18px;
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
   }
+
   .search {
     width: 100%;
   }
 }
+
 @media (max-width: 414px) {
   h1 {
     font-size: 30px;
@@ -226,15 +235,18 @@ fieldset input::placeholder {
     font-weight: 700;
     text-transform: uppercase;
   }
+
   h2 {
     font-size: 18px;
     line-height: 1.5;
     font-weight: 700;
     text-transform: uppercase;
   }
+
   #page-description {
     padding-top: 250px;
   }
+
   .promotion {
     margin: 16px 0;
     font-size: 16px;
@@ -242,16 +254,19 @@ fieldset input::placeholder {
     font-weight: 400;
     text-transform: initial;
   }
+
   .registration {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
   }
+
   .reg-input {
     box-sizing: border-box;
     width: 100%;
   }
 }
+
 #page-pricing {
   margin: 0 auto;
   padding-top: 100px;
@@ -389,10 +404,12 @@ h3 {
     padding-right: 20px;
     padding-left: 20px;
   }
+
   .pricing-item {
     margin-right: 0;
   }
 }
+
 #page-news {
   margin: 0 auto;
   padding-top: 100px;
@@ -409,8 +426,7 @@ h3 {
 
 .news {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   gap: 64px;
 }
 
@@ -438,7 +454,6 @@ h3 {
 .text-news-txt {
   margin: 0;
   font-family: Roboto, sans-serif;
-  color: #FFF;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -464,7 +479,6 @@ h3 {
 
 .text-news-caption {
   font-family: Roboto, sans-serif;
-  color: #FFF;
   font-size: 12px;
   line-height: 1.6;
   font-weight: 400;
@@ -495,37 +509,39 @@ h3 {
     padding-right: 20px;
     max-width: 414px;
   }
+
   .news-item {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     gap: 50px;
   }
+
   .order-1 {
     order: 1;
   }
+
   .order-2 {
     order: 2;
   }
+
   .text-news-title {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
     text-transform: initial;
   }
+
   .txt-paddings-f {
     padding-top: 16px;
     padding-bottom: 24px;
   }
+
   .txt-paddings-s {
     padding-top: 16px;
     padding-bottom: 16px;
   }
-  .news-item {
-    display: flex;
-    gap: 50px;
-  }
 }
+
 .mobile {
   margin: 0 auto;
   max-width: 1200px;
@@ -539,7 +555,6 @@ h3 {
 
 .promo-app {
   font-family: Roboto, sans-serif;
-  color: #FFF;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -549,7 +564,6 @@ h3 {
 
 .download-btn {
   font-family: Roboto, sans-serif;
-  color: #FFF;
   font-size: 12.8px;
   line-height: 1.5;
   font-weight: 400;
@@ -566,21 +580,18 @@ h3 {
   padding-bottom: 16px;
 }
 
-.ta-center {
-  text-align: center;
-}
-
 @media (max-width: 414px) {
   .mobile {
     padding-left: 20px;
     padding-right: 20px;
     max-width: 414px;
   }
+
   .about-app {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
   }
+
   h2 {
     font-size: 18px;
     line-height: 1.5;
@@ -588,6 +599,7 @@ h3 {
     text-transform: uppercase;
   }
 }
+
 .bg-gradient {
   margin: 0 auto;
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
@@ -629,10 +641,6 @@ h3 {
   color: #E0E0E0;
 }
 
-.pr-24px {
-  padding-right: 24px;
-}
-
 .footer-bottom-part {
   margin: 0 auto;
   padding: 2rem 0;
@@ -650,22 +658,16 @@ h3 {
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
   }
+
   .footer-top-part {
     gap: 30px;
   }
+
   .footer-bottom-part {
     gap: 16px;
   }
-}
-body {
-  padding: 0;
-  margin: 0 auto;
-  font-family: Roboto, sans-serif;
-  color: #FFF;
-  background: #08020D;
 }
 
 .bg-artist {
@@ -735,6 +737,7 @@ body {
     max-width: 414px;
   }
 }
+
 #page-popular-track {
   margin: 0 auto;
   padding-top: 100px;
@@ -794,12 +797,14 @@ body {
     padding-left: 20px;
     max-width: 414px;
   }
+
   .track-list {
     display: flex;
     flex-direction: column;
     gap: 25px;
   }
 }
+
 #page-discography {
   margin: 0 auto;
   padding-top: 100px;
@@ -845,19 +850,23 @@ body {
     padding-left: 20px;
     max-width: 414px;
   }
+
   .discography-list {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
   }
+
   .album-cover {
     width: 137px;
     height: 137px;
   }
+
   .discography-info {
     max-width: 137px;
   }
 }
+
 #page-similar {
   margin: 0 auto;
   padding: 100px 0;
@@ -905,19 +914,20 @@ body {
     padding-left: 20px;
     max-width: 414px;
   }
+
   .similar-list {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
   }
+
   .singer-picture {
     width: 137px;
     height: 137px;
   }
+
   .similar-info {
     max-width: 137px;
     text-align: center;
   }
 }
-
-/*# sourceMappingURL=app.css.map */
