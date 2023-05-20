@@ -1,0 +1,13 @@
+@media (max-width: 414px) {
+  #page-popular-track {
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 414px;
+  }
+
+  .track-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
