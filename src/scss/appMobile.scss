@@ -7,8 +7,7 @@
 
   .about-app {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
   }
 
   h2 {

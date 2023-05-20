@@ -46,6 +46,7 @@ h3 {
 .pricing-value {
   @include m-0;
   padding-bottom: 40px;
+
   @include roboto-font-style;
   @include font-style(64px, 400, uppercase, 1em);
   
@@ -53,6 +54,7 @@ h3 {
 
 .rub {
   padding-left: 16px;
+
   @include roboto-font-style;
   @include font-style(32px, 400, uppercase);
   vertical-align: top;
@@ -71,6 +73,7 @@ h3 {
 
 .pricing-btn {
   text-decoration: none;
+
   @include roboto-font-style;
   @include font-style(16px, 400, uppercase);
 }
@@ -78,6 +81,7 @@ h3 {
 .pricing-footer {
   @include m-0;
   padding: 64px 0;
+
   @include roboto-font-style;
   @include font-style(12.8px, 400, initial);
   text-align: center;

@@ -15,6 +15,7 @@ h2 {
 
 .promotion {
     margin-top: 30px;
+
     @include font-style(16px, 400, initial);
 }
 
@@ -29,6 +30,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     @include border-n;
 }
 
@@ -38,13 +40,16 @@ h2 {
     min-width: 270px;
     min-height: 50px;
     border: 2px solid $white;
+
     @include border-r-and-background(3px, inherit);
 }
 
 .btn {
     padding: 20px 30px;
+
     @include width(100%);
     min-height: 57px;
+
     @include border-n;
     @include border-r-and-background(5px, $green);
     @include arial-font-style;
@@ -54,6 +59,7 @@ h2 {
 
 fieldset input::placeholder {
     padding-left: 20px;
+
     @include roboto-font-style;
     @include font-style(14px, 700, initial, 16.41);
     text-align: left;
@@ -65,5 +71,6 @@ fieldset input::placeholder {
     position: absolute;
     overflow: hidden;
     white-space: nowrap;
+
     @include border-n;
 }

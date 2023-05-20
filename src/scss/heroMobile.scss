@@ -23,6 +23,7 @@
 
     .reg-input {
         box-sizing: border-box;
+
         @include width(100%);
     }
 }

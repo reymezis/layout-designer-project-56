@@ -44,6 +44,7 @@ body {
 
 .menu {
     grid-column: 5 / 11;
+
     @include flex-center;
     justify-content: flex-end;
 }
@@ -61,12 +62,14 @@ body {
 
 .search {
     box-sizing: border-box;
+
     @include width(248px);
     grid-column: 20 / 25;
 }
 
 .search-field {
     padding: 5px 0 5px 10px;
+
     @include width-height(100%, 25px);
     @include border-r-and-background(50px, $grey);
     @include border-n;
