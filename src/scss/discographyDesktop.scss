@@ -1,0 +1,32 @@
+#page-discography {
+  @include m-0-auto;
+  padding-top: 100px;
+  max-width: 1200px;
+}
+
+.discography-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 50px;
+  row-gap: 25px;
+}
+
+.album-cover {
+  width: 250px;
+  height: 250px;
+}
+
+.discography-info {
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.album-name {
+  @include font-style(18px, 700, initial);
+}
+
+.album-year {
+  @include font-style(16px, 400, initial);
+  color: $footer;
+}
