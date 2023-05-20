@@ -1,0 +1,34 @@
+#page-similar {
+  @include m-0-auto;
+  padding: 100px 0;
+  max-width: 1200px;
+}
+
+.similar-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 50px;
+  row-gap: 25px;
+}
+
+.singer-picture {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.similar-info {
+  padding-top: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.singer-name {
+  @include font-style(18px, 700, initial);
+}
+
+.q-fans {
+  @include font-style(16px, 400, initial);
+  color: $footer;
+}

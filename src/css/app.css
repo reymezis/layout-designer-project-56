@@ -858,5 +858,66 @@ body {
     max-width: 137px;
   }
 }
+#page-similar {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1200px;
+}
+
+.similar-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 50px;
+  row-gap: 25px;
+}
+
+.singer-picture {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.similar-info {
+  padding-top: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.singer-name {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: initial;
+}
+
+.q-fans {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: initial;
+  color: #E0E0E0;
+}
+
+@media (max-width: 414px) {
+  #page-similar {
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 414px;
+  }
+  .similar-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .singer-picture {
+    width: 137px;
+    height: 137px;
+  }
+  .similar-info {
+    max-width: 137px;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

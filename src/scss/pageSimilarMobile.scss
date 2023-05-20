@@ -1,0 +1,23 @@
+@media (max-width: 414px) {
+  #page-similar {
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 414px;
+  }
+
+  .similar-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .singer-picture {
+    width: 137px;
+    height: 137px;
+  }
+
+  .similar-info {
+    max-width: 137px;
+    text-align: center;
+  }
+}
