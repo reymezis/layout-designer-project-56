@@ -99,8 +99,9 @@ input.search-field::placeholder {
 }
 
 #page-description {
+  margin: 0 auto;
   padding: 200px 0;
-  text-align: center;
+  max-width: 1200px;
 }
 
 h1 {
@@ -671,7 +672,7 @@ h3 {
 }
 
 .bg-artist {
-  background-image: url("../images/Morten Harket.png");
+  background-image: url("../images/MortenHarket.png");
   background-position: center;
   background-size: cover;
 }
@@ -732,8 +733,9 @@ h3 {
 }
 
 @media (max-width: 414px) {
-  .albums-cover {
-    padding: 0 20px;
+  #page-description {
+    padding-right: 20px;
+    padding-left: 20px;
     max-width: 414px;
   }
 }
@@ -854,7 +856,8 @@ h3 {
   .discography-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    row-gap: 25px;
+    column-gap: 50px;
   }
 
   .album-cover {
@@ -875,7 +878,7 @@ h3 {
 
 .similar-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 250px);
   column-gap: 50px;
   row-gap: 25px;
 }
@@ -918,7 +921,8 @@ h3 {
   .similar-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    row-gap: 25px;
+    column-gap: 50px;
   }
 
   .singer-picture {

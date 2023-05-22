@@ -6,7 +6,7 @@
 
 .similar-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 250px);
   column-gap: 50px;
   row-gap: 25px;
 }
