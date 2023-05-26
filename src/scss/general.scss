@@ -1,91 +1,159 @@
-@mixin m-0 {
-    margin: 0;
-}
-
-@mixin m-0-auto {
-    margin: 0 auto;
-}
-
-@mixin p-0 {
-    padding: 0;
-}
-
-@mixin mb($val) {
-    margin-bottom: $val;
-}
-
-@mixin pr($val) {
-    padding-right: $val;
-}
-
-@mixin width($val) {
-    width: $val;
-}
-
-@mixin width-height($w, $h) {
-    width: $w;
-    height: $h;
-}
-
-@mixin flex-center {
-    display: flex;
-    align-items: center;
-
-    @content;
-}
-
-@mixin flex-column {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-
-    @content;
-}
-
-@mixin border-n {
-    border: none;
-}
-
-@mixin border-r($val) {
-    border-radius: $val;
-}
-
-@mixin border-r-and-background($val, $color) {
-    border-radius: $val;
-    background: $color;
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("../fonts/Roboto.woff");
 }
 
 @font-face {
-    font-weight: 400;
-    font-family: Roboto;
-    src: url("../fonts/Roboto.woff");
-}
-
-@font-face {
-    font-weight: 700;
-    font-family: Roboto;
-    src: url("../fonts/Robotobold.woff");
+  font-weight: 700;
+  font-family: Roboto;
+  src: url("../fonts/Robotobold.woff");
 }
 
 @mixin roboto-font-style {
-    font-family: Roboto, sans-serif;
-    color: $white;
-
-    @content;
+  font-family: Roboto, sans-serif;
 }
 
-@mixin arial-font-style {
-    font-family: Arial, sans-serif;
+@mixin font-style($fw, $fs, $lh:1.5, $tt:uppercase) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  text-transform: $tt;
+}
+  
+@mixin color($color: $white) {
+  color: $color;
 }
 
-@mixin font-style($fs, $fw, $tt, $lh:1.5) {
-    font-size: $fs;
-    line-height: $lh;
-    font-weight: $fw;
-    text-transform: $tt;
+@mixin h1 {
+  @include m-0;
+  @include font-style (700, 60px, $lh:1.5, $tt:uppercase);
+  @include color;
+}
+  
+@mixin h2 {
+  @include m-0;
+  @include font-style (700, 38px, $lh:1.5, $tt:uppercase);
+  @include color;
 }
 
+@mixin h3 {
+  @include m-0;
+  @include font-style (400, 30px, 45px, $tt:initial);
+  @include color;
+}
 
+@mixin h4 {
+  @include m-0;
+  @include font-style (700, 18px, $lh:1.5, $tt:initial);
+  @include color;
+}
 
+@mixin h3-mobile {
+  @include font-style (700, 16px, $lh:1.5, $tt:uppercase);
+}
 
+@mixin txt-11px {
+  text-decoration: none;
 
+  @include font-style(400, 11px, 16px);
+}
+
+@mixin arial-font {
+  font-family: Arial, sans-serif;
+
+  @include font-style(400, 13.3px, 15px);
+}
+
+@mixin txt-small {
+  @include font-style(400, 12.8px, $lh:1.5, $tt:initial);
+}
+
+@mixin txt-small-upper {
+  @include font-style(400, 12.8px, $lh:1.5, $tt:uppercase);
+}
+
+@mixin txt-small-upper-bold {
+  @include font-style(700, 12.8px, $lh:1.5, $tt:uppercase);
+}
+
+@mixin txt-14px {
+  @include font-style(700, 14px, 16px, $tt:initial);
+}
+
+@mixin txt-16px {
+  @include font-style(400, 16px, $lh:1.5, $tt:initial);
+}
+
+@mixin txt-16px-up-td-none {
+  text-decoration: none;
+
+  @include font-style(400, 16px, $lh:1.5, $tt:uppercase);
+}
+
+@mixin txt-18px-upper {
+  @include font-style (700, 18px, $lh:1.5, $tt:uppercase);
+}
+
+@mixin txt-24px {
+  @include font-style (400, 24px, $lh:1.5, $tt:uppercase);
+}
+
+@mixin txt-32px {
+  @include font-style (400, 32px, $lh:1, $tt:uppercase);
+}
+
+@mixin txt-64px {
+  @include font-style (400, 64px, $lh:1, $tt:uppercase);
+}
+
+@mixin m-0 {
+  margin: 0;
+}
+
+@mixin m-0-auto {
+  margin: 0 auto;
+}
+
+@mixin p-0 {
+  padding: 0;
+}
+
+@mixin section-desktop {
+  @include m-0-auto;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+}
+
+@mixin section-mobile {
+  max-width: 414px;
+}
+
+@mixin flex-column-wrap {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+@mixin btn {
+  border-radius: 5px;
+}
+
+@mixin width($val) {
+  width: $val;
+}
+
+@mixin width-height($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin border-n {
+  border: none;
+}
+
+@mixin border-r-and-background($val, $color) {
+  border-radius: $val;
+  background: $color;
+}

@@ -1,23 +1,22 @@
-#page-description {
-  @include m-0-auto;
-  padding: 200px 0;
-  max-width: 1200px;
-}
-
 h1 {
-    @include m-0;
-    @include font-style(60px, 700, uppercase);
+    @include h1;
 }
 
 h2 {
-    @include m-0;
-    @include font-style(38px, 700, uppercase);
+    @include h2;
 }
 
 .promotion {
     margin-top: 30px;
+    margin-bottom: 16px;
+}
 
-    @include font-style(16px, 400, initial);
+.txt-16px {
+    @include txt-16px;
+}
+
+.ta-center {
+    text-align: center;
 }
 
 .registration {
@@ -36,7 +35,6 @@ h2 {
 }
 
 .reg-input {
-    @include p-0;
     margin-bottom: 1.5rem;
     min-width: 270px;
     min-height: 50px;
@@ -46,24 +44,28 @@ h2 {
 }
 
 .btn {
+    @include btn;
+}
+
+.btn-green {
     padding: 20px 30px;
+    background: $green;
+}
 
-    @include width(100%);
-    min-height: 57px;
-
+.border-n {
     @include border-n;
-    @include border-r-and-background(5px, $green);
-    @include arial-font-style;
-    @include font-style(13.3px, 400, uppercase, 15.3px);
-    color: $white;
+}
+
+.width-100 {
+    @include width(100%);
 }
 
 fieldset input::placeholder {
     padding-left: 20px;
 
     @include roboto-font-style;
-    @include font-style(14px, 700, initial, 16.41);
-    text-align: left;
+    @include txt-14px;
+    @include color;
 }
 
 .sr-only {

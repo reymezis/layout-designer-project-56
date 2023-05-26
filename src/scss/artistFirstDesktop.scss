@@ -4,18 +4,12 @@
   background-size: cover;
 }
 
-.ta-left {
-  text-align: left;
-}
-
 .pb-2rem {
   padding-bottom: 2rem;
 }
 
-.albums-cover {
-  @include m-0-auto;
-  max-width: 1200px;
-  position: relative;
+.va-middle {
+  vertical-align: middle;
 }
 
 .actions {
@@ -24,19 +18,18 @@
   gap: 1.5rem;
 }
 
-.artist-btn {
+.btn-artist {
   width: 200px;
   padding: 20px 30px;
   border: none;
-  border-radius: 5px;
   text-align: left;
 }
 
-.btn-mix {
+.btn-violet {
   background: $violet;
 }
 
-.btn-favourite {
+.btn-brown {
   background: $brown;
 }
 
@@ -47,12 +40,3 @@
   padding-right: 16px;
   vertical-align: middle;
 }
-
-.name-btn {
-  @include m-0;
-  @include roboto-font-style;
-  @include font-style(12.8px, 400, uppercase);
-  vertical-align: middle;
-}
-
-

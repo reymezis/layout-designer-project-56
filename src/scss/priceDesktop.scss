@@ -1,32 +1,9 @@
 #page-pricing {
-  @include m-0-auto;
-  padding-top: 100px;
-  max-width: 1200px;
-  text-align: center;
+  @include section-desktop;
 }
 
-.pb-45px {
-  padding-bottom: 45px;
-}
-
-.pt-100px {
-  padding-top: 100px;
-}
-
-.mr-50px {
-  margin-right: 50px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.pricing-item {
-  flex: 1 1 26.5%;
-  padding: 0 1.5rem;
-  border-radius: 1rem;
-  margin-bottom: 40px;
+.m-0 {
+  @include m-0;
 }
 
 .pt-24px {
@@ -37,60 +14,61 @@
   padding-bottom: 200px;
 }
 
-h3 {
-  @include m-0;
-  @include roboto-font-style;
-  @include font-style(24px, 400, uppercase);
-}
-
-.pricing-value {
-  @include m-0;
+.pb-40px {
   padding-bottom: 40px;
-
-  @include roboto-font-style;
-  @include font-style(64px, 400, uppercase, 1em);
-  
 }
 
-.rub {
-  padding-left: 16px;
+.pb-45px {
+  padding-bottom: 45px;
+}
 
-  @include roboto-font-style;
-  @include font-style(32px, 400, uppercase);
+.pl-16px {
+  padding-left: 16px;
+}
+
+.va-top {
   vertical-align: top;
 }
 
-.d-flex-center {
-  @include flex-center;
-  justify-content: center;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+}
 
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 66px;
-  border: 1px solid $white;
-  border-radius: 5px;
+.pricing-item {
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+}
+
+.txt-24px {
+  @include txt-24px;
+}
+
+.txt-64px {
+  @include txt-64px;
+}
+
+.txt-32px {
+  @include txt-32px;
+}
+
+.txt-16px-up-td-none {
+  @include txt-16px-up-td-none;
+}
+
+.txt-small {
+  @include txt-small;
 }
 
 .pricing-btn {
-  text-decoration: none;
-
-  @include roboto-font-style;
-  @include font-style(16px, 400, uppercase);
+  padding: 21px 30px;
+  border: 1px solid $white;
 }
 
 .pricing-footer {
   @include m-0;
   padding: 64px 0;
-
-  @include roboto-font-style;
-  @include font-style(12.8px, 400, initial);
-  text-align: center;
-}
-
-.footer-text-price {
-  @include m-0;
-  @include roboto-font-style;
-  @include font-style(16px, 400, initial);
 }
 
 .bg-free {

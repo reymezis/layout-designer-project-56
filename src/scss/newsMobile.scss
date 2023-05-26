@@ -1,14 +1,16 @@
 @media (max-width: 414px) {
   #page-news {
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 414px;
+    @include section-mobile;
   }
 
   .news-item {
     display: flex;
     flex-flow: column wrap;
-    gap: 50px;
+    row-gap: 50px;
+  }
+
+  h3 {
+    @include txt-16px;
   }
 
   .order-1 {
@@ -17,10 +19,6 @@
 
   .order-2 {
     order: 2;
-  }
-
-  .text-news-title {
-    @include font-style(16px, 400, initial);
   }
 
   .txt-paddings-f {

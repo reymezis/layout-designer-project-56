@@ -1,32 +1,27 @@
 #page-discography {
-  @include m-0-auto;
-  padding-top: 100px;
-  max-width: 1200px;
+  @include section-desktop;
+}
+
+h4 {
+  @include h4;
 }
 
 .discography-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(2, 1fr);
   column-gap: 50px;
   row-gap: 25px;
 }
 
 .album-cover {
-  width: 250px;
-  height: 250px;
+  @include width-height(250px, 250px);
 }
 
 .discography-info {
-  padding-top: 18px;
-  display: flex;
-  flex-direction: column;
+  padding-top: 14px;
+
+  @include flex-column-wrap;
 }
 
-.album-name {
-  @include font-style(18px, 700, initial);
-}
 
-.album-year {
-  @include font-style(16px, 400, initial);
-  color: $footer;
-}

@@ -1,13 +1,10 @@
 @media (max-width: 414px) {
   .mobile {
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 414px;
+    @include section-mobile;
   }
 
-  .about-app {
-    display: flex;
-    flex-flow: column wrap;
+  .flex-column-wrap {
+    @include flex-column-wrap;
   }
 
   h2 {

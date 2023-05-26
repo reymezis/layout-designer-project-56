@@ -1,16 +1,13 @@
 @media (max-width: 414px) {
-  .footer-top-part, .footer-bottom-part {
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-flow: column wrap;
+  .footer {
+    @include section-mobile;
   }
 
-  .footer-top-part {
-    gap: 30px;
+  .footer-top, .footer-flex {
+    @include flex-column-wrap;
   }
 
-  .footer-bottom-part {
-    gap: 16px;
+  .footer-flex {
+    row-gap: 1rem;
   }
 }

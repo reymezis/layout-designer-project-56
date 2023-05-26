@@ -1,24 +1,13 @@
 @media (max-width: 414px) {
   #page-similar {
-    padding-right: 20px;
-    padding-left: 20px;
-    max-width: 414px;
+    @include section-mobile;
   }
 
   .similar-list {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 25px;
-    column-gap: 50px;
+    grid-template-columns: repeat(2, 137px);
   }
 
   .singer-picture {
-    width: 137px;
-    height: 137px;
-  }
-
-  .similar-info {
-    max-width: 137px;
-    text-align: center;
+    @include width-height(137px, 137px);
   }
 }

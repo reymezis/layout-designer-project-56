@@ -1,21 +1,19 @@
 #page-news {
-  @include m-0-auto;
-  padding-top: 100px;
-  max-width: 1200px;
+  @include section-desktop;
 }
 
-.ta-center {
-  text-align: center;
+.pb-3rem {
+  padding-bottom: 3rem;
 }
 
-.pb-48px {
-  padding-bottom: 48px;
+.pr-1rem {
+  padding-right: 1rem;
 }
 
 .news {
   display: flex;
   flex-flow: column wrap;
-  gap: 64px;
+  row-gap: 64px;
 }
 
 .news-item {
@@ -26,20 +24,12 @@
 
 .img-size {
   width: 100%;
-  background-position: center;
+  vertical-align: middle;
   background-size: cover;
 }
 
-.text-news-title {
-  @include roboto-font-style;
-  @include font-style(30px, 400, initial);
-}
-
-.text-news-txt {
-  @include m-0;
-  @include roboto-font-style;
-  @include font-style(16px, 400, initial);
-  color: $white-s;
+h3 {
+  @include h3;
 }
 
 .txt-paddings-f {
@@ -55,32 +45,31 @@
 .news-author {
   display: flex;
   align-items: center;
-  padding-bottom: 48px;
 }
 
-.text-news-caption {
-  @include roboto-font-style;
-  @include font-style(12px, 400, uppercase, 1.6);
-  color: $white-s;
+.txt-small-upper {
+  @include txt-small-upper;
 }
 
-.text-yellow {
-  color: $sandy;
+.sandy {
+  @include color($sandy);
 }
 
-.pr-16px {
-  padding-right: 16px;
+.dark-grey {
+  @include color($dark-grey);
 }
 
-.btn-style {
-  color: $white-s;
+.td-none {
   text-decoration: none;
-  padding: 16px 30px;
-
-  box-sizing: border-box;
-  border: 1px solid $white;
-  border-radius: 5px;
 }
+
+.news-btn {
+  box-sizing: border-box;
+  padding: 16px 30px;
+  border: 1px solid $dark-grey;
+  width: fit-content;
+}
+
 
 
 

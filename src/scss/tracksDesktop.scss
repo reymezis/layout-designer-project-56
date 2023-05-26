@@ -1,21 +1,13 @@
 #page-popular-track {
-  @include m-0-auto;
-  padding-top: 100px;
-  max-width: 1200px;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.pb-3rem {
-  padding-bottom: 3rem;
+  @include section-desktop;
 }
 
 .track-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 25px;
+  column-gap: 50px;
 }
 
 .tr-cover {
@@ -35,12 +27,6 @@
   align-items: center;
 }
 
-.tr-name {
-  @include m-0;
-  @include font-style(12.8px, 700, uppercase);
-}
-
-.tr-singer, .tr-duration {
-  @include m-0;
-  @include font-style(12.8px, 400, uppercase);
+.txt-small-upper-bold {
+  @include txt-small-upper-bold;
 }

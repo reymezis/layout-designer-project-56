@@ -1,35 +1,40 @@
 @media (max-width: 414px) {
-    .first-section {
-        padding: 0 20px;
-        max-width: 414px;
+    #page-description {
+        @include m-0-auto;
+        padding-top: 250px;
+    
+        @include section-mobile;
     }
-
+    
     .header {
-        padding: 0 20px;
         display: block;
-        left: 0;
-        right: 0;
+
+        // display: flex;
+        // flex-flow: column wrap;
+        // align-items: flex-start;
     }
 
     .logo {
-        @include mb(17px);
+        margin-bottom: 17px;
     }
 
     .mb-3px {
-        @include mb(3px);
+        margin-bottom: 3px;
     }
 
     .menu-item {
-        @include p-0;
-        @include font-style(11px, 700, uppercase, 12.89px);
+        line-height: 13px
     }
 
     .menu {
-        @include mb(18px);
-        @include flex-column;
+        margin: 0 0 18px;
+
+        @include flex-column-wrap;
+        align-items: flex-start;
+        justify-content: center;
     }
 
     .search {
-        @include width(100%);
+        @include width(374px);
     }
 }

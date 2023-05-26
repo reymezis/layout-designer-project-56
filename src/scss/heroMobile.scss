@@ -1,24 +1,20 @@
 @media (max-width: 414px) {
     h1 {
-        @include font-style(30px, 700, uppercase);
+        font-size: 30px;
     }
     
     h2 {
-        @include font-style(18px, 700, uppercase);
-    }
-
-    #page-description {
-        padding-top: 250px;
+        font-size: 18px;
     }
 
     .promotion {
         margin: 16px 0;
-    
-        @include font-style(16px, 400, initial);
     }
 
     .registration {
-        @include flex-column;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
     }
 
     .reg-input {
