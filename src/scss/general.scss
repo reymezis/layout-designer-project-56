@@ -26,19 +26,16 @@
 }
 
 @mixin h1 {
-  @include m-0;
   @include font-style (700, 60px, $lh:1.5, $tt:uppercase);
   @include color;
 }
   
 @mixin h2 {
-  @include m-0;
   @include font-style (700, 38px, $lh:1.5, $tt:uppercase);
   @include color;
 }
 
 @mixin h3 {
-  @include m-0;
   @include font-style (400, 30px, 45px, $tt:initial);
   @include color;
 }
@@ -49,6 +46,16 @@
   @include color;
 }
 
+@mixin h1-mobile {
+  @include font-style (700, 30px, $lh:1.5, $tt:uppercase);
+  @include color;
+}
+
+@mixin h2-mobile {
+  @include font-style (700, 18px, $lh:1.5, $tt:uppercase);
+  @include color;
+}
+
 @mixin h3-mobile {
   @include font-style (700, 16px, $lh:1.5, $tt:uppercase);
 }
@@ -56,17 +63,17 @@
 @mixin txt-11px {
   text-decoration: none;
 
-  @include font-style(400, 11px, 16px);
+  @include font-style(700, 11px, 16px, $tt:uppercase);
 }
 
 @mixin arial-font {
   font-family: Arial, sans-serif;
 
-  @include font-style(400, 13.3px, 15px);
+  @include font-style(400, 13.3px, 15.29px, $tt:uppercase);
 }
 
 @mixin txt-small {
-  @include font-style(400, 12.8px, $lh:1.5, $tt:initial);
+  @include font-style(400, 12.8px, 19px, $tt:initial);
 }
 
 @mixin txt-small-upper {

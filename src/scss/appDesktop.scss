@@ -1,20 +1,15 @@
 #page-app {
   @include section-desktop;
-  padding-bottom: 100px;
 }
 
 .grid-col2-1fr {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
 }
 
 .btn-download {
-  padding: 16px 40px;
+  padding: 17px 41px 17px 40px;
   background: $brown;
   border-radius: 32px;
-  width: fit-content;
-}
-
-.pb-1rem {
-  padding-bottom: 1rem;
 }

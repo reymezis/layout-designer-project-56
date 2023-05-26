@@ -6,8 +6,4 @@
   .flex-column-wrap {
     @include flex-column-wrap;
   }
-
-  h2 {
-    @include font-style(18px, 700, uppercase);
-  }
 }

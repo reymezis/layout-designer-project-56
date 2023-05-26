@@ -1,10 +1,10 @@
 @media (max-width: 414px) {
     h1 {
-        font-size: 30px;
+        @include h1-mobile;
     }
     
     h2 {
-        font-size: 18px;
+        @include h2-mobile;
     }
 
     .promotion {
