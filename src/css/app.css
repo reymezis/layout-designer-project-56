@@ -296,8 +296,8 @@ fieldset input::placeholder {
   padding-left: 16px;
 }
 
-.va-top {
-  vertical-align: top;
+.va-super {
+  vertical-align: super;
 }
 
 .cards {
@@ -359,19 +359,16 @@ fieldset input::placeholder {
 
 .bg-free {
   background-image: url("../images/subscribe_1.png");
-  background-position: center;
   background-size: cover;
 }
 
 .bg-standart {
   background-image: url("../images/subscribe_2.png");
-  background-position: center;
   background-size: cover;
 }
 
 .bg-premium {
   background-image: url("../images/subscribe_3.png");
-  background-position: center;
   background-size: cover;
 }
 
@@ -387,7 +384,7 @@ fieldset input::placeholder {
   }
 
   .h3 {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
