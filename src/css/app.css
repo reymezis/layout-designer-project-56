@@ -25,10 +25,10 @@ body {
   background-size: cover;
 }
 
-#page-description {
+.standart-section {
   margin: 0 auto;
-  padding: 200px 20px;
   max-width: 1200px;
+  padding: 0 20px;
 }
 
 .header {
@@ -36,22 +36,17 @@ body {
   top: 25px;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 .logo {
   display: flex;
-  align-items: stretch;
+  align-items: center;
 }
 
 .logo-img {
   width: 24px;
   height: 24px;
   padding-right: 1rem;
-}
-
-.pt-3px {
-  padding-top: 3px;
 }
 
 .menu {
@@ -62,9 +57,9 @@ body {
 
 .menu-item {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 11px;
-  line-height: 16px;
+  line-height: 1.5;
   text-transform: uppercase;
   color: #CACACA;
 }
@@ -82,7 +77,6 @@ body {
 }
 
 .search {
-  box-sizing: border-box;
   width: 248px;
 }
 
@@ -99,12 +93,18 @@ body {
   font-family: Arial, sans-serif;
   font-weight: 400;
   font-size: 13.3px;
-  line-height: 15.29px;
+  line-height: 15px;
   text-transform: uppercase;
 }
 
 .silver {
   color: #757575;
+}
+
+#page-description {
+  margin: 0 auto;
+  padding: 200px 20px;
+  max-width: 1200px;
 }
 
 h1 {
@@ -200,12 +200,6 @@ fieldset input::placeholder {
 }
 
 @media (max-width: 414px) {
-  #page-description {
-    margin: 0 auto;
-    padding-top: 250px;
-    max-width: 414px;
-  }
-
   .header {
     display: block;
   }
@@ -219,7 +213,11 @@ fieldset input::placeholder {
   }
 
   .menu-item {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
     line-height: 13px;
+    text-transform: uppercase;
   }
 
   .menu {
@@ -236,6 +234,16 @@ fieldset input::placeholder {
 }
 
 @media (max-width: 414px) {
+  #page-description {
+    margin: 0 auto;
+    padding-top: 200px;
+    max-width: 414px;
+  }
+
+  .pt-50px {
+    padding-top: 50px;
+  }
+
   h1 {
     font-weight: 700;
     font-size: 30px;
@@ -397,6 +405,10 @@ fieldset input::placeholder {
   padding-left: 20px;
   padding-right: 20px;
   max-width: 1200px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 
 .pb-3rem {
@@ -631,10 +643,6 @@ h3 {
 
 .pb-24px {
   padding-bottom: 24px;
-}
-
-.mb-0 {
-  margin-bottom: 0;
 }
 
 .va-middle {

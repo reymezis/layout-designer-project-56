@@ -1,11 +1,4 @@
 @media (max-width: 414px) {
-    #page-description {
-        @include m-0-auto;
-        padding-top: 250px;
-    
-        @include section-mobile;
-    }
-    
     .header {
         display: block;
 
@@ -23,7 +16,7 @@
     }
 
     .menu-item {
-        line-height: 13px
+        @include txt-11px-mobile;
     }
 
     .menu {

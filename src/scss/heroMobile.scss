@@ -1,4 +1,15 @@
 @media (max-width: 414px) {
+    #page-description {
+        @include m-0-auto;
+        padding-top: 200px;
+    
+        @include section-mobile;
+    }
+
+    .pt-50px {
+        padding-top: 50px;
+    }
+
     h1 {
         @include h1-mobile;
     }

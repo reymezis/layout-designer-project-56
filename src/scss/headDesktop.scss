@@ -13,10 +13,10 @@ body {
     background-size: cover;
 }
 
-#page-description {
+.standart-section {
     @include m-0-auto;
-    padding: 200px 20px;
     max-width: 1200px;
+    padding: 0 20px;
 }
 
 .header {
@@ -24,18 +24,11 @@ body {
     top: 25px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-
-    // display: grid;
-    // grid-template-columns: repeat(24, 1fr);
-    // align-items: center;
 }
 
 .logo {
     display: flex;
-    align-items: stretch;
-
-    // grid-column: 1 / 3;
+    align-items: center;
 }
 
 .logo-img {
@@ -43,17 +36,10 @@ body {
     padding-right: px-to-rem(16px);
 }
 
-.pt-3px {
-    padding-top: 3px;
-}
-
 .menu {
-    // grid-column: 5 / 11;
     margin-left: px-to-rem(90px);
     display: flex;
     align-items: center;
-
-    // justify-content: flex-end;
 }
 
 .menu-item {
@@ -74,11 +60,8 @@ body {
 }
 
 .search {
-    box-sizing: border-box;
-
     @include width(248px);
 
-    // grid-column: 20 / 25;
 }
 
 .search-field {
