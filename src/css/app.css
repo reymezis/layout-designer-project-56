@@ -154,6 +154,7 @@ h2 {
 }
 
 .reg-input {
+  box-sizing: border-box;
   margin-bottom: 1.5rem;
   min-width: 270px;
   min-height: 50px;
@@ -169,6 +170,7 @@ h2 {
 .btn-green {
   padding: 20px 30px;
   background: #34C176;
+  height: 57px;
 }
 
 .border-n {
@@ -216,12 +218,12 @@ fieldset input::placeholder {
     text-decoration: none;
     font-weight: 700;
     font-size: 11px;
-    line-height: 12.89px;
+    line-height: 13px;
     text-transform: uppercase;
   }
 
   .menu {
-    margin: 0 0 18px;
+    margin: 0 0 16px;
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
@@ -236,12 +238,11 @@ fieldset input::placeholder {
 @media (max-width: 414px) {
   #page-description {
     margin: 0 auto;
-    padding-top: 200px;
     max-width: 414px;
   }
 
-  .pt-50px {
-    padding-top: 50px;
+  .pt-3rem {
+    padding-top: 3rem;
   }
 
   h1 {
@@ -657,6 +658,7 @@ h3 {
 
 .btn-artist {
   width: 200px;
+  height: 62px;
   padding: 20px 30px;
   border: none;
   text-align: left;

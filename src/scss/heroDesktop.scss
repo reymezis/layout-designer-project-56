@@ -41,6 +41,7 @@ h2 {
 }
 
 .reg-input {
+    box-sizing: border-box;
     margin-bottom: 1.5rem;
     min-width: 270px;
     min-height: 50px;
@@ -56,6 +57,7 @@ h2 {
 .btn-green {
     padding: 20px 30px;
     background: $green;
+    height: 57px;
 }
 
 .border-n {
