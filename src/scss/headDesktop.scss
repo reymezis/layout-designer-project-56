@@ -17,6 +17,7 @@ body {
     @include m-0-auto;
     max-width: 1200px;
     padding: 0 20px;
+    position: relative;
 }
 
 .header {
@@ -67,7 +68,7 @@ body {
 .search-field {
     padding: 5px 0 5px 10px;
 
-    @include width-height(100%, 25px);
+    @include width(100%);
     @include border-r-and-background(50px, $dark);
     @include border-n;
 }

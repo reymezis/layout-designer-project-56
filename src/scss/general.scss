@@ -73,13 +73,13 @@
 @mixin txt-11px-mobile {
   text-decoration: none;
 
-  @include font-style(700, 11px, 13px, $tt:uppercase);
+  @include font-style(700, 11px, 12.89px, $tt:uppercase);
 }
 
 @mixin arial-font {
   font-family: Arial, sans-serif;
 
-  @include font-style(400, 13.3px, 15px, $tt:uppercase);
+  @include font-style(400, 13.3px, 15.29px, $tt:uppercase);
 }
 
 @mixin txt-small {
