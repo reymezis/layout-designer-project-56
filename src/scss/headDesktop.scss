@@ -1,17 +1,3 @@
-body {
-    @include p-0;
-    @include m-0-auto;
-    font-family: Roboto, sans-serif;
-    color: $dark-grey;
-    background: $black;
-}
-
-.bg {
-    background-image: url("../images/banner.png");
-    background-position: center;
-    background-size: cover;
-}
-
 .standart-section {
     @include m-0-auto;
     max-width: 1200px;
@@ -22,9 +8,10 @@ body {
 .header {
     position: absolute;
     top: 25px;
+    width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
+    column-gap: 90px;
 }
 
 .logo {
@@ -34,12 +21,13 @@ body {
 
 .logo-img {
     @include width-height(24px, 24px);
-    padding-right: px-to-rem(16px);
+    padding-right: 1rem;
 }
 
 .menu {
-    margin-left: px-to-rem(90px);
-    display: flex;
+    display: grid;
+    column-gap: 24px;
+    grid-template-columns: repeat(4, min-content);
     align-items: center;
 }
 
@@ -52,15 +40,9 @@ body {
     @include color;
 }
 
-.pr-24px {
-    padding-right: px-to-rem(24px);
-}
-
-.mr-451px {
-    margin-right: px-to-rem(451px);
-}
-
 .search {
+    margin-left: auto;
+
     @include width(248px);
 
 }

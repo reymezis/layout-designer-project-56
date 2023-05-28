@@ -10,20 +10,6 @@
   src: url("../fonts/Robotobold.woff");
 }
 
-body {
-  padding: 0;
-  margin: 0 auto;
-  font-family: Roboto, sans-serif;
-  color: #CACACA;
-  background: #08020D;
-}
-
-.bg {
-  background-image: url("../images/banner.png");
-  background-position: center;
-  background-size: cover;
-}
-
 .standart-section {
   margin: 0 auto;
   max-width: 1200px;
@@ -34,9 +20,10 @@ body {
 .header {
   position: absolute;
   top: 25px;
+  width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  column-gap: 90px;
 }
 
 .logo {
@@ -51,8 +38,9 @@ body {
 }
 
 .menu {
-  margin-left: 5.625rem;
-  display: flex;
+  display: grid;
+  column-gap: 24px;
+  grid-template-columns: repeat(4, min-content);
   align-items: center;
 }
 
@@ -69,15 +57,8 @@ body {
   color: #FFF;
 }
 
-.pr-24px {
-  padding-right: 1.5rem;
-}
-
-.mr-451px {
-  margin-right: 28.1875rem;
-}
-
 .search {
+  margin-left: auto;
   width: 248px;
 }
 
@@ -99,6 +80,20 @@ body {
 
 .silver {
   color: #757575;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+  color: #CACACA;
+  background: #08020D;
+}
+
+.bg {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
 }
 
 #page-description {
@@ -203,15 +198,14 @@ fieldset input::placeholder {
 
 @media (max-width: 414px) {
   .header {
-    display: block;
+    max-width: 374px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
   }
 
   .logo {
     margin-bottom: 17px;
-  }
-
-  .mb-3px {
-    margin-bottom: 3px;
   }
 
   .menu-item {
@@ -228,6 +222,7 @@ fieldset input::placeholder {
     flex-flow: column wrap;
     align-items: flex-start;
     justify-content: center;
+    row-gap: 3px;
   }
 
   .search {

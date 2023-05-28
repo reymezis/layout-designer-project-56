@@ -1,3 +1,17 @@
+body {
+    @include p-0;
+    @include m-0-auto;
+    font-family: Roboto, sans-serif;
+    color: $dark-grey;
+    background: $black;
+}
+
+.bg {
+    background-image: url("../images/banner.png");
+    background-position: center;
+    background-size: cover;
+}
+
 #page-description {
     @include m-0-auto;
     padding: 200px 20px;
