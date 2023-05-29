@@ -90,10 +90,6 @@ body {
   background: #08020D;
 }
 
-main {
-  margin: 0 auto;
-}
-
 .bg {
   background-image: url("../images/banner.png");
   background-position: center;
