@@ -1,104 +1,104 @@
 body {
-    @include p-0;
-    @include m-0-auto;
-    font-family: Roboto, sans-serif;
-    color: $dark-grey;
-    background: $black;
+  @include p-0;
+  @include m-0-auto;
+  font-family: Roboto, sans-serif;
+  color: $dark-grey;
+  background: $black;
 }
 
 #page-description {
-    padding: 200px 20px;
+  padding: 200px 20px;
 }
 
 .bg {
-    background-image: url("../images/banner.png");
-    background-position: center;
-    background-size: cover;
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .section-structure {
-    @include m-0-auto;
-    max-width: 1200px;
+  @include m-0-auto;
+  max-width: 1200px;
 }
 
 h1 {
-    @include h1;
+  @include h1;
 }
 
 h2 {
-    @include h2;
+  @include h2;
 }
 
 .promotion {
-    margin-top: 31px;
-    margin-bottom: 17px;
+  margin-top: 31px;
+  margin-bottom: 17px;
 }
 
 .txt-16px {
-    @include txt-16px;
+  @include txt-16px;
 }
 
 .ta-center {
-    text-align: center;
+  text-align: center;
 }
 
 .registration {
-    @include m-0-auto;
-    max-width: 570px;
+  @include m-0-auto;
+  max-width: 570px;
 }
 
 .fieldset {
-    @include m-0;
-    @include p-0;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
+  @include m-0;
+  @include p-0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
 
-    @include border-n;
+  @include border-n;
 }
 
 .reg-input {
-    box-sizing: border-box;
-    margin-bottom: 1.5rem;
-    min-width: 270px;
-    min-height: 50px;
-    border: 2px solid $white;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  min-width: 270px;
+  min-height: 50px;
+  border: 2px solid $white;
 
-    @include border-r-and-background(3px, inherit);
+  @include border-r-and-background(3px, inherit);
 }
 
 .btn {
-    @include btn;
+  @include btn;
 }
 
 .btn-green {
-    padding: 20px 30px;
-    background: $green;
-    height: 57px;
+  padding: 20px 30px;
+  background: $green;
+  height: 57px;
 }
 
 .border-n {
-    @include border-n;
+  @include border-n;
 }
 
 .width-100 {
-    @include width(100%);
+  @include width(100%);
 }
 
 fieldset input::placeholder {
-    padding-left: 20px;
+  padding-left: 20px;
 
-    @include roboto-font-style;
-    @include txt-14px;
-    @include color;
+  @include roboto-font-style;
+  @include txt-14px;
+  @include color;
 }
 
 .sr-only {
-    @include width-height(1px, 1px);
-    @include p-0;
-    position: absolute;
-    overflow: hidden;
-    white-space: nowrap;
+  @include width-height(1px, 1px);
+  @include p-0;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
 
-    @include border-n;
+  @include border-n;
 }

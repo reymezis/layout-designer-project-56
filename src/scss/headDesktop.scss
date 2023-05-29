@@ -1,64 +1,64 @@
 .standart-section {
-    @include m-0-auto;
-    max-width: 1200px;
-    padding: 0 20px;
-    position: relative;
+  @include m-0-auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  position: relative;
 }
 
 .header {
-    position: absolute;
-    top: 25px;
-    width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 90px;
+  position: absolute;
+  top: 25px;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 90px;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo-img {
-    @include width-height(24px, 24px);
-    padding-right: 1rem;
+  @include width-height(24px, 24px);
+  padding-right: 1rem;
 }
 
 .menu {
-    display: grid;
-    column-gap: 24px;
-    grid-template-columns: repeat(4, min-content);
-    align-items: center;
+  display: grid;
+  column-gap: 24px;
+  grid-template-columns: repeat(4, min-content);
+  align-items: center;
 }
 
 .menu-item {
-    @include txt-11px;
-    @include color($dark-grey);
+  @include txt-11px;
+  @include color($dark-grey);
 }
 
 .white {
-    @include color;
+  @include color;
 }
 
 .search {
-    margin-left: auto;
+  margin-left: auto;
 
-    @include width(248px);
+  @include width(248px);
 
 }
 
 .search-field {
-    padding: 5px 0 5px 10px;
+  padding: 5px 0 5px 10px;
 
-    @include width(100%);
-    @include border-r-and-background(50px, $dark);
-    @include border-n;
+  @include width(100%);
+  @include border-r-and-background(50px, $dark);
+  @include border-n;
 }
 
 .arial-font {
-    @include arial-font;
+  @include arial-font;
 }
 
 .silver {
-    @include color($silver);
+  @include color($silver);
 }

@@ -1,34 +1,34 @@
 @media (max-width: 414px) {
-    #page-description {
-        @include m-0-auto;
-        @include section-mobile;
-    }
+  #page-description {
+    @include m-0-auto;
+    @include section-mobile;
+  }
 
-    .pt-3rem {
-        padding-top: 3rem;
-    }
+  .pt-3rem {
+    padding-top: 3rem;
+  }
 
-    h1 {
-        @include h1-mobile;
-    }
-    
-    h2 {
-        @include h2-mobile;
-    }
+  h1 {
+    @include h1-mobile;
+  }
 
-    .promotion {
-        margin: 16px 0;
-    }
+  h2 {
+    @include h2-mobile;
+  }
 
-    .registration {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: flex-start;
-    }
+  .promotion {
+    margin: 16px 0;
+  }
 
-    .reg-input {
-        box-sizing: border-box;
+  .registration {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+  }
 
-        @include width(100%);
-    }
+  .reg-input {
+    box-sizing: border-box;
+
+    @include width(100%);
+  }
 }

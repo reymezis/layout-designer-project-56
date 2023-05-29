@@ -20,7 +20,7 @@
   line-height: $lh;
   text-transform: $tt;
 }
-  
+
 @mixin color($color: $white) {
   color: $color;
 }
@@ -29,7 +29,7 @@
   @include font-style (700, 60px, $lh:1.5, $tt:uppercase);
   @include color;
 }
-  
+
 @mixin h2 {
   @include font-style (700, 38px, $lh:1.5, $tt:uppercase);
   @include color;

@@ -1,29 +1,29 @@
 @media (max-width: 414px) {
-    .header {
-        max-width: 374px;
+  .header {
+    max-width: 374px;
 
-        @include flex-column-wrap;
-        align-items: flex-start;
-    }
+    @include flex-column-wrap;
+    align-items: flex-start;
+  }
 
-    .logo {
-        margin-bottom: 17px;
-    }
+  .logo {
+    margin-bottom: 17px;
+  }
 
-    .menu-item {
-        @include txt-11px-mobile;
-    }
+  .menu-item {
+    @include txt-11px-mobile;
+  }
 
-    .menu {
-        margin: 0 0 16px;
+  .menu {
+    margin: 0 0 16px;
 
-        @include flex-column-wrap;
-        align-items: flex-start;
-        justify-content: center;
-        row-gap: 3px;
-    }
+    @include flex-column-wrap;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 3px;
+  }
 
-    .search {
-        @include width(374px);
-    }
+  .search {
+    @include width(374px);
+  }
 }

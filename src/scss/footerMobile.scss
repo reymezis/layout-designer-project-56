@@ -3,7 +3,8 @@
     @include section-mobile;
   }
 
-  .footer-top, .footer-flex {
+  .footer-top,
+  .footer-flex {
     @include flex-column-wrap;
   }
 
