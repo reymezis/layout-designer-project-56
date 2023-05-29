@@ -6,6 +6,10 @@ body {
     background: $black;
 }
 
+main {
+    @include m-0-auto;
+}
+
 .bg {
     background-image: url("../images/banner.png");
     background-position: center;
